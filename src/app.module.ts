@@ -12,9 +12,10 @@ import { SocialPagesModule } from './social_pages/social_pages.module';
 import { ServicesModule } from './services/services.module';
 import { SkillsModule } from './skills/skills.module';
 import { AdminModule } from './admin/admin.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [MongooseModule.forRoot("mongodb+srv://Azizkhon:aziz_2005@cluster0.y3affow.mongodb.net/?retryWrites=true&w=majority"), CommentsModule, PostModule, StudyPlaceModule, WorkPlaceModule, ImageModule, ProjectsModule, SocialPagesModule, ServicesModule, SkillsModule, AdminModule],
+  imports: [ConfigModule.forRoot({ envFilePath: ".env", isGlobal: true }), MongooseModule.forRoot("mongodb+srv://Azizkhon:aziz_2005@cluster0.y3affow.mongodb.net/?retryWrites=true&w=majority"), CommentsModule, PostModule, StudyPlaceModule, WorkPlaceModule, ImageModule, ProjectsModule, SocialPagesModule, ServicesModule, SkillsModule, AdminModule],
   controllers: [AppController],
   providers: [AppService],
 })
