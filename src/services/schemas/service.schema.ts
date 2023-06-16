@@ -5,6 +5,7 @@ export type ServiceDocument = HydratedDocument<Service>;
 
 @Schema()
 export class Service {
+
     @Prop()
     id: string;
 
@@ -13,6 +14,7 @@ export class Service {
 
     @Prop({ type: mongoose.Schema.Types.ObjectId, ref: "Image" })
     image_id: string
+
 }
 
 export const ServiceSchema = SchemaFactory.createForClass(Service);
