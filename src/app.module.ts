@@ -15,7 +15,7 @@ import { AdminModule } from './admin/admin.module';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [ConfigModule.forRoot({ envFilePath: ".env", isGlobal: true }), MongooseModule.forRoot("mongodb+srv://Azizkhon:aziz_2005@cluster0.y3affow.mongodb.net/?retryWrites=true&w=majority"), CommentsModule, PostModule, StudyPlaceModule, WorkPlaceModule, ImageModule, ProjectsModule, SocialPagesModule, ServicesModule, SkillsModule, AdminModule],
+  imports: [ConfigModule.forRoot({ envFilePath: ".env", isGlobal: true }), MongooseModule.forRoot("mongodb+srv://Azizkhon:PxncYnXLpiwgwL2J@cluster0.30hrsns.mongodb.net/?retryWrites=true&w=majority"), CommentsModule, PostModule, StudyPlaceModule, WorkPlaceModule, ImageModule, ProjectsModule, SocialPagesModule, ServicesModule, SkillsModule, AdminModule],
   controllers: [AppController],
   providers: [AppService],
 })
@@ -24,5 +24,6 @@ export class AppModule {}
 
 // username: Azizkhon
 // password: aziz_2005
+// password2: PxncYnXLpiwgwL2J
 
 // mongodb+srv://Azizkhon:<password>@cluster0.y3affow.mongodb.net/?retryWrites=true&w=majority
