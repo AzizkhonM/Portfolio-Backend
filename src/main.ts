@@ -43,8 +43,6 @@ const start = async () => {
         ],
       });
 
-     /*  app.use(cookieParser.default()); */
-
     app.listen(PORT, () => {
       console.log("Server", PORT, "- portda");
     })
