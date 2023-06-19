@@ -6,7 +6,6 @@ import { CommentsModule } from './comments/comments.module';
 import { PostModule } from './post/post.module';
 import { StudyPlaceModule } from './study_place/study_place.module';
 import { WorkPlaceModule } from './work_place/work_place.module';
-import { ImageModule } from './image/image.module';
 import { ProjectsModule } from './projects/projects.module';
 import { SocialPagesModule } from './social_pages/social_pages.module';
 import { ServicesModule } from './services/services.module';
@@ -22,7 +21,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
       rootPath: join(__dirname, '..', 'swagger-static'),
       serveRoot: process.env.NODE_ENV === 'development' ? '/' : '/swagger',
     }),
-    ConfigModule.forRoot({ envFilePath: ".env", isGlobal: true }), MongooseModule.forRoot("mongodb+srv://Azizkhon:llRMkQqtwMQpRxNB@cluster0.30hrsns.mongodb.net/?retryWrites=true&w=majority"), CommentsModule, PostModule, StudyPlaceModule, WorkPlaceModule, ImageModule, ProjectsModule, SocialPagesModule, ServicesModule, SkillsModule, AdminModule],
+    ConfigModule.forRoot({ envFilePath: ".env", isGlobal: true }), MongooseModule.forRoot("mongodb+srv://Azizkhon:llRMkQqtwMQpRxNB@cluster0.30hrsns.mongodb.net/?retryWrites=true&w=majority"), CommentsModule, PostModule, StudyPlaceModule, WorkPlaceModule, ProjectsModule, SocialPagesModule, ServicesModule, SkillsModule, AdminModule],
   controllers: [AppController],
   providers: [AppService],
 })
