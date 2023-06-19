@@ -7,8 +7,8 @@ export class CreateSkillDto {
     @IsString()
     readonly skill: string;
 
-    @ApiProperty({ example: "1", description: "Rasm ID si" })
+    @ApiProperty({ example: "image.jpg", description: "Rasm linki" })
     @IsString()
-    readonly image_id: string;
+    readonly image: string;
 
 }

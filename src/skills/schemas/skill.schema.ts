@@ -11,8 +11,8 @@ export class Skill {
     @Prop()
     skill: string
 
-    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: "Image" })
-    image_id: string
+    @Prop()
+    image: string
 }
 
 export const SkillSchema = SchemaFactory.createForClass(Skill);

@@ -12,8 +12,8 @@ export class Service {
     @Prop()
     service: string
 
-    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: "Image" })
-    image_id: string
+    @Prop()
+    image: string
 
 }
 

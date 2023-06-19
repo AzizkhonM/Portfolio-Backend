@@ -7,8 +7,8 @@ export class CreateProjectDto {
     @IsString()
     readonly title: string;
 
-    @ApiProperty({ example: "1", description: "Rasm ID si" })
+    @ApiProperty({ example: "image.png", description: "Rasm linki" })
     @IsString()
-    readonly image_id: string;
+    readonly image: string;
 
 }

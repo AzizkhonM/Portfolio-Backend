@@ -11,8 +11,8 @@ export class Project {
     @Prop()
     title: string
 
-    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: "Image" })
-    image_id: string
+    @Prop()
+    image: string
 }
 
 export const ProjectSchema = SchemaFactory.createForClass(Project);

@@ -11,8 +11,8 @@ export class CreateSocialPageDto {
     @IsString()
     readonly username: string;
 
-    @ApiProperty({ example: "1", description: "Rasm ID si" })
+    @ApiProperty({ example: "image.jpg", description: "Rasm linki" })
     @IsString()
-    readonly image_id: string;
+    readonly image: string;
 
 }

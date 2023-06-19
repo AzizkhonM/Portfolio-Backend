@@ -14,8 +14,8 @@ export class SocialPage {
     @Prop()
     username: string
 
-    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: "Image" })
-    image_id: string
+    @Prop()
+    image: string
 }
 
 export const SocialPageSchema = SchemaFactory.createForClass(SocialPage);
