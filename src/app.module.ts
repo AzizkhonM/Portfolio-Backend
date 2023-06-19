@@ -22,7 +22,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
       rootPath: join(__dirname, '..', 'swagger-static'),
       serveRoot: process.env.NODE_ENV === 'development' ? '/' : '/swagger',
     }),
-    ConfigModule.forRoot({ envFilePath: ".env", isGlobal: true }), MongooseModule.forRoot("mongodb+srv://farruxdevyusupov:icjOMPFwHvP71AzN@portfolio.2dchjfb.mongodb.net/?retryWrites=true&w=majority"), CommentsModule, PostModule, StudyPlaceModule, WorkPlaceModule, ImageModule, ProjectsModule, SocialPagesModule, ServicesModule, SkillsModule, AdminModule],
+    ConfigModule.forRoot({ envFilePath: ".env", isGlobal: true }), MongooseModule.forRoot("mongodb+srv://Azizkhon:llRMkQqtwMQpRxNB@cluster0.30hrsns.mongodb.net/?retryWrites=true&w=majority"), CommentsModule, PostModule, StudyPlaceModule, WorkPlaceModule, ImageModule, ProjectsModule, SocialPagesModule, ServicesModule, SkillsModule, AdminModule],
   controllers: [AppController],
   providers: [AppService],
 })
