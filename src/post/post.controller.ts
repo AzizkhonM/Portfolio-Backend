@@ -16,7 +16,7 @@ export class PostController {
   }
 
   @ApiOperation({ summary: "Barcha postlar" })
-  @Get("all")
+  @Get()
   findAll() {
     return this.postService.findAll();
   }

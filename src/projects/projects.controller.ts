@@ -16,7 +16,7 @@ export class ProjectsController {
   }
 
   @ApiOperation({ summary: "Barcha loyihalar" })
-  @Get("all")
+  @Get()
   findAll() {
     return this.projectsService.findAll();
   }

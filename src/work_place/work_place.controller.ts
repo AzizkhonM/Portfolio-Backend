@@ -16,7 +16,7 @@ export class WorkPlaceController {
   }
 
   @ApiOperation({ summary: "Barcha joylar" })
-  @Get("all")
+  @Get()
   findAll() {
     return this.workPlaceService.findAll();
   }

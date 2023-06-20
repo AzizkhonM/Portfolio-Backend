@@ -16,7 +16,7 @@ export class StudyPlaceController {
   }
 
   @ApiOperation({ summary: "Barcha joylar" })
-  @Get("all")
+  @Get()
   findAll() {
     return this.studyPlaceService.findAll();
   }

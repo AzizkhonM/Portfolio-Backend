@@ -22,7 +22,7 @@ export class CommentsController {
   }
 
   @ApiOperation({ summary: "Barcha izohlar" })
-  @Get("all")
+  @Get()
   findAll() {
     return this.commentsService.findAll();
   }
