@@ -16,6 +16,9 @@ export class Comment {
 
   @Prop({ type: mongoose.Schema.Types.ObjectId, ref: "Post" })
   post_id: string;
+
+  @Prop({ default: false })
+  status: boolean
 }
 
 export const CommentSchema = SchemaFactory.createForClass(Comment);
