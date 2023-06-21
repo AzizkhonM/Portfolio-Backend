@@ -33,6 +33,18 @@ export class CommentsController {
     return this.commentsService.unverify(id)
   }
 
+  @ApiOperation({ summary: "Tasdiqlangan izohlar" })
+  @Get(`verified`)
+  verified(){
+    return this.commentsService.verified()
+  }
+
+  @ApiOperation({ summary: "Tasdiqlanmagan izohlar" })
+  @Get(`unverified`)
+  unverified(){
+    return this.commentsService.unverified()
+  }
+
   @ApiOperation({ summary: "Barcha izohlar" })
   @Get()
   findAll() {
