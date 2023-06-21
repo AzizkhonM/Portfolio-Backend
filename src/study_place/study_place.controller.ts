@@ -10,7 +10,7 @@ export class StudyPlaceController {
   constructor(private readonly studyPlaceService: StudyPlaceService) {}
 
   @ApiOperation({ summary: "Joy qo'shish" })
-  @Post("add")
+  @Post()
   create(@Body() createStudyPlaceDto: CreateStudyPlaceDto) {
     return this.studyPlaceService.create(createStudyPlaceDto);
   }

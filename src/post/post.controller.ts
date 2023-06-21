@@ -10,7 +10,7 @@ export class PostController {
   constructor(private readonly postService: PostService) {}
 
   @ApiOperation({ summary: "Post qo'shish" })
-  @Post("add")
+  @Post()
   create(@Body() createPostDto: CreatePostDto) {
     return this.postService.create(createPostDto);
   }

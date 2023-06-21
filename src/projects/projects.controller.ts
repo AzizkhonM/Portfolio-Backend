@@ -10,7 +10,7 @@ export class ProjectsController {
   constructor(private readonly projectsService: ProjectsService) {}
 
   @ApiOperation({ summary: "Loyiha qo'shish" })
-  @Post("add")
+  @Post()
   create(@Body() createProjectDto: CreateProjectDto) {
     return this.projectsService.create(createProjectDto);
   }

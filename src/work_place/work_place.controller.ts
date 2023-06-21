@@ -10,7 +10,7 @@ export class WorkPlaceController {
   constructor(private readonly workPlaceService: WorkPlaceService) {}
 
   @ApiOperation({ summary: "Joy qo'shish" })
-  @Post("add")
+  @Post()
   create(@Body() createWorkPlaceDto: CreateWorkPlaceDto) {
     return this.workPlaceService.create(createWorkPlaceDto);
   }

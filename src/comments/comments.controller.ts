@@ -10,7 +10,7 @@ export class CommentsController {
   constructor(private readonly commentsService: CommentsService) {}
 
   @ApiOperation({ summary: "Izoh qo'shish" })
-  @Post("add")
+  @Post()
   create(@Body() createCommentDto: CreateCommentDto) {
     return this.commentsService.create(createCommentDto);
   }
