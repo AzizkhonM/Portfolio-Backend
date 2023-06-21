@@ -11,4 +11,8 @@ export class CreateProjectDto {
     @IsString()
     readonly image: string;
 
+    @ApiProperty({ example: "https://lalala.com", description: "Loyiha linki" })
+    @IsString()
+    readonly link: string;
+
 }
