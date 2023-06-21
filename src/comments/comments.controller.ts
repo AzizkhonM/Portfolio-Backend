@@ -21,6 +21,18 @@ export class CommentsController {
     return this.commentsService.findByPost(id)
   }
 
+  @ApiOperation({ summary: "Izohni tasdiqlash" })
+  @Get(`verify/:id`)
+  verify(@Param("id") id: string){
+    return this.commentsService.verify(id)
+  }
+
+  @ApiOperation({ summary: "Izoh tasdig'ini olib tashlash" })
+  @Get(`unverify/:id`)
+  unverify(@Param("id") id: string){
+    return this.commentsService.unverify(id)
+  }
+
   @ApiOperation({ summary: "Barcha izohlar" })
   @Get()
   findAll() {

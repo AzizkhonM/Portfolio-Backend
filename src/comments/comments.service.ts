@@ -25,6 +25,14 @@ export class CommentsService {
     return arr
   }
 
+  async verify(id: string){
+    return await this.commentModel.findByIdAndUpdate(id, { status: true }, { new: true }).exec()
+  }
+
+  async unverify(id: string){
+    return await this.commentModel.findByIdAndUpdate(id, { status: false }, { new: true }).exec()
+  }
+
   async findAll(): Promise<Comment[]> {
     return await this.commentModel.find().populate("post_id").exec();
   }
