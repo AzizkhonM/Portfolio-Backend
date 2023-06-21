@@ -34,7 +34,7 @@ export class CommentsService {
   }
 
   async verified(){
-    let data = await this.commentModel.find().exec()
+    let data = await this.commentModel.find().populate("post_id").exec()
     let arr = []
     for(let i of data){
       if(i.status){
@@ -45,7 +45,7 @@ export class CommentsService {
   }
 
   async unverified(){
-    let data = await this.commentModel.find()
+    let data = await this.commentModel.find().populate("post_id").exec()
     let arr = []
     for(let i of data){
       if(!i.status){
