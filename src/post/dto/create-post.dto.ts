@@ -11,4 +11,12 @@ export class CreatePostDto {
     @IsString()
     readonly text: string;
 
+    @ApiProperty({ example: "rasm.png", description: "Rasm" })
+    @IsString()
+    readonly image: string;
+
+    @ApiProperty({ example: "Qisqasini aytsam", description: "Qisqacha" })
+    @IsString()
+    readonly short: string;
+
 }
