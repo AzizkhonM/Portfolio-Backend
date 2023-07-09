@@ -13,6 +13,12 @@ export class Post {
 
   @Prop()
   text: string
+
+  @Prop()
+  image: string;
+
+  @Prop()
+  short: string
 }
 
 export const PostSchema = SchemaFactory.createForClass(Post);
