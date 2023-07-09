@@ -84,10 +84,6 @@ const start = async () => {
     app.enableCors({
       allowedHeaders: ['content-type'],
       origin: [
-        'http://localhost:5174',
-        'http://localhost:5173',
-        'http://localhost:3000',
-        'http://localhost:3001',
         '*',
       ],
       credentials: true,
@@ -95,17 +91,7 @@ const start = async () => {
 
     const PORT = process.env.PORT || 3001;
 
-    app.enableCors({
-      allowedHeaders: ['content-type'],
-      origin: [
-        'http://localhost:5174',
-        'http://localhost:5173',
-        'http://localhost:3000',
-        'http://localhost:3001',
-        '*',
-      ],
-      credentials: true,
-    });
+    
 
     app.setGlobalPrefix('api');
 
