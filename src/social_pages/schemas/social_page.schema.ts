@@ -15,7 +15,10 @@ export class SocialPage {
     username: string
 
     @Prop()
-    image: string
+    color: string
+
+    @Prop()
+    icon: string
 }
 
 export const SocialPageSchema = SchemaFactory.createForClass(SocialPage);
