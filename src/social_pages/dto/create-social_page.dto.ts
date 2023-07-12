@@ -19,4 +19,8 @@ export class CreateSocialPageDto {
     @IsString()
     readonly icon: string;
 
+    @ApiProperty({ example: "icon_color", description: "Ikonka rangi" })
+    @IsString()
+    readonly icon_color: string;
+
 }

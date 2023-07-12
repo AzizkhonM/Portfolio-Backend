@@ -19,6 +19,9 @@ export class SocialPage {
 
     @Prop()
     icon: string
+
+    @Prop()
+    icon_color: string
 }
 
 export const SocialPageSchema = SchemaFactory.createForClass(SocialPage);
