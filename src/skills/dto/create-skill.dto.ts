@@ -3,12 +3,16 @@ import { IsString } from "class-validator";
 
 export class CreateSkillDto {
 
-    @ApiProperty({ example: "Tezkorlik", description: "Qobiliyat" })
+    @ApiProperty({ example: "NodeJS", description: "Texnologiya" })
     @IsString()
     readonly skill: string;
 
-    @ApiProperty({ example: "image.jpg", description: "Rasm linki" })
+    @ApiProperty({ example: "icon", description: "Ikonka" })
     @IsString()
     readonly image: string;
+
+    @ApiProperty({ example: "link", description: "Link" })
+    @IsString()
+    readonly link: string;
 
 }

@@ -13,6 +13,9 @@ export class Skill {
 
     @Prop()
     image: string
+
+    @Prop()
+    link: string
 }
 
 export const SkillSchema = SchemaFactory.createForClass(Skill);
